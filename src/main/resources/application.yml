@@ -1,0 +1,25 @@
+server:
+  port: 8060
+spring:
+  rabbitmq:
+    host:  #ip
+    port:  #端口
+    username:  #用户
+    password:  #密码
+
+
+
+  datasource:
+    url: jdbc:mysql://自己的ip:3306/mq?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+    platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+  jpa:
+    show-sql: true
+    database: mysql
+    hibernate:
+      ddl-auto: update
+  redis:
+    host: 192.168... # ip
+
